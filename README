@@ -1,0 +1,45 @@
+# Ghana Rental Project Read Me
+
+Welcome to the Ghana Rental Project! In this project, we will explore how to integrate Apache Spark with Amazon Redshift to create a robust database of house rentals in Accra. This integration will provide us with powerful data processing and analytics capabilities. Below is a high-level overview of the project:
+
+## Project Overview
+
+### 1. Data Extraction and Ingestion
+- We begin by collecting data about house rentals in Accra from various sources. This data is initially structured into a comma-separated value (CSV) file.
+
+### 2. Amazon S3 as Staging Area
+- To efficiently manage our data, we use Amazon S3 as a staging area. Amazon S3 is a scalable and cost-effective storage solution, serving as an intermediary between Spark and Redshift.
+
+### 3. ETL Process with Spark
+- Apache Spark takes center stage in our project, handling Extract, Transform, and Load (ETL) processes. Spark is renowned for its data processing capabilities and can efficiently manage vast amounts of data. We leverage Spark's libraries to clean, transform, and enrich our data.
+
+### 4. Data Transformation
+- During the ETL process, data often needs cleaning and reshaping to align with the schema of our Redshift database. Spark plays a crucial role in performing these transformations.
+
+### 5. Data Deduplication and Enrichment
+- Utilizing Spark, we enhance data quality by executing tasks such as deduplication (removing duplicate records) and data enrichment (adding supplementary information from external sources).
+
+### 6. Loading Data into Redshift
+- Following ETL processing, we load the transformed data from Spark into Amazon Redshift. This step can be accomplished using the Redshift COPY command or employing ETL tools like AWS Glue for efficient data loading.
+
+### 7. Data Warehouse Schema Design
+- To optimize query performance for analytical tasks, we meticulously design a suitable schema for our Redshift data warehouse. Redshift's support for columnar storage makes it particularly well-suited for analytical workloads.
+
+### 8. Running Analytical Queries
+- With our data securely stored in Redshift, we are equipped to run analytical queries using SQL. Redshift's optimization for such queries makes it the ideal choice for data analysis and reporting.
+
+### 9. Monitoring and Optimization
+- We continuously monitor the performance of our Spark jobs, Redshift queries, and the overall system. Regular optimization efforts are made to fine-tune our data warehouse design, queries, and ETL processes for efficiency and cost-effectiveness.
+
+### 10. Security and Access Control
+- Data privacy and access control are paramount. We implement robust security measures, including AWS IAM roles and Redshift user permissions, to ensure that data remains secure and accessible only to authorized users.
+
+### 11. Backup and Disaster Recovery
+- Safeguarding against data loss is crucial. We have implemented comprehensive backup and disaster recovery strategies, covering both our data in Amazon S3 and our Redshift cluster.
+
+We invite you to explore this project further and discover how it empowers data-driven decisions in Accra's dynamic real estate market. If you have any questions or would like to delve deeper into specific aspects of this project, please feel free to reach out. Happy exploring!
+
+Please find a sample of the dataset in parquet format. Thanks !!!
+
+**Project Contributors:** Bryan Vukania
+
